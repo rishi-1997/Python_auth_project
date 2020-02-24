@@ -1,0 +1,11 @@
+{% extends 'AuthPro_app/base.html' %}
+{%block body_block %}
+    <div class="jumbotron">
+    <h1>Signup to create account</h1>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Signup" class="btn btn-primary">
+    </form>
+    </div>
+{%endblock%}
